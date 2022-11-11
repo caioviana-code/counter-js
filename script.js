@@ -24,6 +24,19 @@ class Counter {
     }
 
     updateDisplay() {
+
+        const positive = this.counterNumber > 0;
+        const negative = this.counterNumber < 0;
+
+        if (positive) {
+            this.counterText.classList.add('positive');
+        } else if (negative) {
+            this.counterText.classList.add('negative');
+        } else {
+            this.counterText.classList.remove('positive');
+            this.counterText.classList.remove('negative');
+        }
+
         this.counterText.innerText = this.counterNumber;
     }
 }
