@@ -1,1 +1,1 @@
-# counter-js
+# Simple counter made with javascript
